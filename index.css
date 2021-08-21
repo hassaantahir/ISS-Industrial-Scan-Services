@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styling */
+.top-nav {
+  z-index: 5;
+  position: absolute;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.navbar-brand img {
+  width: 50%;
+}
+.head-container a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.head-container a:hover {
+  color: #ec7b27;
+}
+.head-container a i:hover {
+  color: #ec7b27;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .text-head {
+    color: white !important;
+  }
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white !important;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ec7b27 !important;
+}
+.navbar .navbar-nav .nav-item .active {
+  color: #ec7b27 !important;
+}
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+    background: #fefefe;
+    opacity: 0.7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    left: 58px;
+  }
+  .navbar .nav-item .dropdown-toggle::after {
+    display: none;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 1rem;
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    font-weight: 300;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .dropdown-menu {
+    background: transparent !important;
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    color: #fff !important;
+  }
+  .navbar .nav-item .dropdown-item:hover {
+    color: #7a7a7a !important;
+  }
+}
+
+/* carousel styling */
+.carousel .carousel-control-next-icon {
+  height: 5rem;
+  width: 5rem;
+}
+.carousel .carousel-control-next {
+  opacity: 1;
+}
+.carousel .carousel-caption {
+  z-index: 1;
+  top: 30%;
+  left: 5%;
+  text-align: start;
+}
+.carousel .carousel-caption h1 {
+  font-size: 5rem;
+}
+.carousel .carousel-caption p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 68%;
+}
+@media (max-width: 992px) {
+  .carousel .carousel-caption h1 {
+    font-size: 3.5rem;
+  }
+  .carousel .carousel-caption p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .carousel-caption h1 {
+    font-size: 2.4rem;
+  }
+  .carousel .carousel-caption p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 80%;
+  }
+  .carousel .carousel-control-next-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .carousel .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel .carousel-caption p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    width: 90%;
+  }
+  .carousel .carousel-control-next-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel .carousel-caption p {
+    font-size: 0.5rem;
+    font-weight: 400;
+    width: 95%;
+  }
+  .carousel .carousel-control-next-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .carousel-caption h1 {
+    font-size: 1rem;
+  }
+}
+
+/* introduction section styling */
+
+/* introduction section styling */
+.intro {
+  background-color: #f8f8f8;
+}
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7a7a7a;
+  width: 50%;
+  margin: auto;
+}
+.intro p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #7a7a7a;
+  margin-top: 2rem;
+}
+.intro ul {
+  margin-top: 2rem;
+}
+.intro li {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+.intro img {
+  width: 30%;
+}
+@media (max-width: 1200px) {
+  .intro h1 {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .intro h1 {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .intro p {
+    font-size: 1.1rem;
+  }
+  .intro li {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+  .intro li {
+    font-size: 1rem;
+  }
+}
+
+/* footer styling */
+.footer .logo {
+  width: 40%;
+}
+.footer h2 {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+.footer p {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.footer .map {
+  width: 70%;
+}
