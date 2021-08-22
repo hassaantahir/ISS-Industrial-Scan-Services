@@ -1,5 +1,5 @@
 <?php
-if(!empty($_POST["send"])) {
+if($_POST["send"]) {
 	$first_name = $_POST["firstName"];
 	$last_name = $_POST["lastName"];
 	$email = $_POST["email"];
@@ -10,7 +10,13 @@ if(!empty($_POST["send"])) {
 	if(mail($toEmail, $email, $content, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
 	    $type = "success";
+		echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+	}
+	else {
+		echo '<p>We are sorry but the email did not go through.</p>';
 	}
 }
-require_once "contact.php";
+else {
+    echo '<p>Something went wrong</p>';
+}
 ?>

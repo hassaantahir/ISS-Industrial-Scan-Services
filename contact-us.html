@@ -99,16 +99,16 @@
               
             <form action=”contact.php” method="post">
               <div class="mb-4">
-                <input type="text" name="firstName" placeholder="First Name" class="form-control py-2 contact-field" required />
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" class="form-control py-2 contact-field" required />
               </div>
               <div class="mb-4">
-                <input type="text" name="lastName" placeholder="Last Name" class="form-control py-2 contact-field" />
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="form-control py-2 contact-field" />
               </div>
               <div class="mb-4">
-                <input type="email" name="email" placeholder="Your Mail?" class="form-control py-2 contact-field" required />
+                <input type="email" id="email" name="email" placeholder="Your Mail?" class="form-control py-2 contact-field" required />
               </div>
               <div class="mb-4">
-                <textarea placeholder="Your Question" name="content" class="form-control py-2 contact-field" rows="5" required /></textarea>
+                <textarea placeholder="Your Question" id="content" name="content" class="form-control py-2 contact-field" rows="5" required /></textarea>
               </div>
               <button type="submit" class="btn btn-contact w-100 py-2">Send</button>
                 <div id="statusMessage"> 
