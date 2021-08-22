@@ -505,3 +505,13 @@
   -ms-transform: scale(1.01);
   transform: scale(1.01);
 }
+.msg-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .contact-head {
+    width: 80%;
+  }
+}
