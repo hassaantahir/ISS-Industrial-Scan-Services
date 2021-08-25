@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <div id="loader" class="center"></div>
     <div class="w-100 top-nav">
       <div class="container head">
         <div class="text-md-end text-center head-container py-1 py-md-2">
@@ -203,5 +204,16 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== 'complete') {
+          document.querySelector('body').style.visibility = 'hidden'
+          document.querySelector('#loader').style.visibility = 'visible'
+        } else {
+          document.querySelector('#loader').style.display = 'none'
+          document.querySelector('body').style.visibility = 'visible'
+        }
+      }
+    </script>
   </body>
 </html>
